@@ -9,3 +9,28 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+
+ .contador-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* para espacio entre los dígitos */
+  .contador {
+    display: flex;
+    gap: 5px; 
+    margin-bottom: 10px;
+  }
+  
+  .digito {
+    background-color: #25a59f;
+    color: #0c47c5;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 40px; /* para que todos los dígitos tengan el mismo ancho */
+    text-align: center;
+  }
