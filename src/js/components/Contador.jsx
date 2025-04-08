@@ -10,13 +10,12 @@ const Contador = () => {
       // Configura el intervalo que se ejecutará cada segundo (1000 milisegundos)
       const intervalId = setInterval(() => {
         setCount(prevCount => prevCount + 1);
-      }, 1000); // Puedes ajustar este valor para cambiar la velocidad del contador
+      }, 1000); 
   
-      // Función de limpieza que se ejecuta cuando el componente se desmonta
       return () => {
-        clearInterval(intervalId); // Limpia el intervalo para evitar fugas de memoria
+        clearInterval(intervalId); 
       };
-    }, []); // El array vacío como segundo argumento asegura que este efecto solo se ejecute una vez al montar el componente
+    }, []); 
   
     return (
       <div className="contador">
